@@ -11,7 +11,7 @@ def hello_world():
   jobs = load_jobs_from_db()
   return render_template('home.html' ,
                          jobs=jobs,
-                         company_name='Jovian')
+                         )
 
 @app.route("/api/jobs")
 def list_jobs():
